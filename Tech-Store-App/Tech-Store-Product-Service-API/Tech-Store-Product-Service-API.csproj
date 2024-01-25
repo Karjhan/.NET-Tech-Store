@@ -27,4 +27,8 @@
       <ProjectReference Include="..\Tech-Store-Product-Service-Presentation\Tech-Store-Product-Service-Presentation.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\assets\images\" />
+    </ItemGroup>
+
 </Project>

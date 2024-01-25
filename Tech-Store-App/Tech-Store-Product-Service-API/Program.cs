@@ -17,14 +17,10 @@ builder.Host.UseSerilog((context, configuration) => configuration.ReadFrom.Confi
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwaggerDocumentation();
-}
-
-app.UseHttpsRedirection();
+app.UseInfrastructureSwagger();
 
 app.MapControllers();
+
+app.MapApplicationHealthChecks();
 
 app.Run();

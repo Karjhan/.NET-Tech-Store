@@ -1,9 +1,29 @@
-services:
+services: 
   postgres:
+    container_name: container-pg
     image: postgres
-    environment:
-      - POSTGRES_PASSWORD=postgrespw
+    hostname: localhost
     ports:
-      - 5432:5432
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: products
     volumes:
-      - /var/lib/postresql/data
+      - app-postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  pgadmin:
+    container_name: container-pgadmin
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    restart: unless-stopped
+
+volumes:
+  app-postgres-data:

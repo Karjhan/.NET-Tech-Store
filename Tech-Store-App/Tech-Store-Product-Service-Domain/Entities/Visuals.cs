@@ -2,13 +2,13 @@
 
 namespace Tech_Store_Product_Service_Domain.Entities;
 
-public sealed class ProductVisuals : Entity
+public sealed class Visuals : Entity
 {
     public string MainPictureURL { get; private set; }
 
     private List<string> PictureSources { get; }
     
-    public ProductVisuals(Guid productId, string mainPictureUrl) : base(productId)
+    public Visuals(Guid productId, string mainPictureUrl) : base(productId)
     {
         if (string.IsNullOrEmpty(mainPictureUrl))
         {

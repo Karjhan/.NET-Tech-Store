@@ -1,0 +1,72 @@
+[
+  {
+    "Id": "9f78b1ca-7f51-4043-ac30-d68ca557360b",
+    "Name": {
+      "ShortName": "Fractal",
+      "LongName": "Fractal Design"
+    }
+  },
+  {
+    "Id": "a92715e1-a42a-4540-b3f1-f2f6457f22df",
+    "Name": {
+      "ShortName": "Noctua",
+      "LongName": ""
+    }
+  },
+  {
+    "Id": "e4a77109-ccc6-4bb3-b8a0-3dfc1c3b6a26",
+    "Name": {
+      "ShortName": "AMD",
+      "LongName": "Advanced Micro Devices"
+    }
+  },
+  {
+    "Id": "22c47d79-e285-4b87-bb81-4e7300587b63",
+    "Name": {
+      "ShortName": "Gigabyte",
+      "LongName": "Gigabyte Technology"
+    }
+  },
+  {
+    "Id": "955dcf60-c391-4b34-baeb-ba546ac3647d",
+    "Name": {
+      "ShortName": "Seasonic",
+      "LongName": "Sea Sonic Electronics"
+    }
+  },
+  {
+    "Id": "4c425aff-f256-4541-986a-e05925eeca80",
+    "Name": {
+      "ShortName": "Corsair",
+      "LongName": "Corsair Gaming"
+    }
+  },
+  {
+    "Id": "a010da2f-cc51-4497-bb27-d2ede39af164",
+    "Name": {
+      "ShortName": "Kingston",
+      "LongName": "Kingston Technology"
+    }
+  },
+  {
+    "Id": "671e5109-9379-41c6-8ec8-241ca306ce84",
+    "Name": {
+      "ShortName": "Seagate",
+      "LongName": "Seagate Technology"
+    }
+  },
+  {
+    "Id": "f097019e-89b3-4f38-ac42-40de8d0e8efb",
+    "Name": {
+      "ShortName": "Samsung",
+      "LongName": "Samsung Electronics"
+    }
+  },
+  {
+    "Id": "8400ba43-6af6-43e5-ae52-d9023455d55a",
+    "Name": {
+      "ShortName": "Asus",
+      "LongName": "ASUSTeK Computer"
+    }
+  }
+]

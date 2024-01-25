@@ -1,0 +1,24 @@
+[
+  {
+    "Id": "d1101cf3-b4ee-425f-a358-80158d18991a",
+    "Name": {
+      "ShortName": "PC Components",
+      "LongName": "Components for personal computer"
+    },
+    "ProductTypes": [
+      "e6d65c1f-21d9-450e-9f5f-b3538a5d51ee",
+      "2afeb90a-87e5-43b0-a89b-a3a36611e2d7",
+      "939c67cc-1612-46ab-a9c5-4499a1ab3a49",
+      "feb1d092-ae92-4730-ab74-3f90488b387d",
+      "6cdee062-1386-4a8d-a63c-395f932580ea",
+      "e54ad1ca-6286-42a5-93e0-3ac27c961aa8",
+      "aae2232b-09cf-43bb-9394-4c1b5dfad959",
+      "3b8b156b-5e69-478a-bec6-1e35fa2f1297",
+      "af0aec11-54a6-41b2-9903-20fae660e7d1",
+      "740f5aac-c514-4cb8-9dc7-db0e7a5823f6",
+      "0cd628ee-b3a1-4051-881f-996b1cb90b13",
+      "b9f2bc99-95c4-46e9-9e89-8eafb6fb11d7",
+      "c5249808-877c-4a82-80b5-da2d88fcbf14"
+    ]
+  }
+]

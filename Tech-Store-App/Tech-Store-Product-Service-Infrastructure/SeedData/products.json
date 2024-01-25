@@ -1,0 +1,23 @@
+[
+  {
+    "Id": "f71997a8-3e7a-4802-ab30-f5f1bedb9d00",
+    "Name": {
+      "ShortName": "Fractal Design Ridge",
+      "LongName": ""
+    },
+    "Description": {
+      "ShortDescription": "Meet Ridge — an uncluttered, mITX form factor case designed to integrate seamlessly into people's living spaces and daily rituals",
+      "LongDescription": ""
+    },
+    "Price": {
+      "Amount": 0
+    },
+    "VisualsId": "f71997a8-3e7a-4802-ab30-f5f1bedb9d00",
+    "ProductTypeId": "af0aec11-54a6-41b2-9903-20fae660e7d1",
+    "ProductBrandId": "9f78b1ca-7f51-4043-ac30-d68ca557360b",
+    "ProductGroupId": "d1101cf3-b4ee-425f-a358-80158d18991a",
+    "Specifications": [
+      
+    ]
+  }
+]
