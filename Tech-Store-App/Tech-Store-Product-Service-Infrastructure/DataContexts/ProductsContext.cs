@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using Tech_Store_Product_Service_Domain.Abstractions;
 using Tech_Store_Product_Service_Domain.Entities;
 
 namespace Tech_Store_Product_Service_Infrastructure.DataContexts;
 
-public class ProductsContext : DbContext
+public class ProductsContext : DbContext, IUnitOfWork
 {
     public DbSet<Product> Products { get; set; }
 
@@ -22,5 +24,11 @@ public class ProductsContext : DbContext
     public ProductsContext(DbContextOptions<ProductsContext> options) : base(options)
     {
         
+    }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }

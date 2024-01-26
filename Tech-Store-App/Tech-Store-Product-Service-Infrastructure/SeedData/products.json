@@ -17,7 +17,72 @@
     "ProductBrandId": "9f78b1ca-7f51-4043-ac30-d68ca557360b",
     "ProductGroupId": "d1101cf3-b4ee-425f-a358-80158d18991a",
     "Specifications": [
-      
-    ]
+      {
+        "Name": "Case Type",
+        "Category": "General",
+        "Value": "Mini ITX"
+      },
+      {
+        "Name": "Color",
+        "Category": "General",
+        "Value": "Black"
+      },
+      {
+        "Name": "PSU Placement",
+        "Category": "General",
+        "Value": "Down"
+      },
+      {
+        "Name": "PSU Included",
+        "Category": "General",
+        "Value": "No"
+      },
+      {
+        "Name": "Internal Bays 2.5",
+        "Category": "General",
+        "Value": "4"
+      },
+      {
+        "Name": "Weight",
+        "Category": "General",
+        "Value": "4.3kg"
+      },
+      {
+        "Name": "Dimensions",
+        "Category": "General",
+        "Value": "395.4 x 374 x 110 mm"
+      },
+      {
+        "Name": "GPU Length",
+        "Category": "General",
+        "Value": "335mm(Max)"
+      },
+      {
+        "Name": "USB 3.0",
+        "Category": "Connectors",
+        "Value": "2"
+      },
+      {
+        "Name": "USB C",
+        "Category": "Connectors",
+        "Value": "1"
+      },
+      {
+        "Name": "Audio Jack",
+        "Category": "Connectors",
+        "Value": "1(Combo)"
+      },
+      {
+        "Name": "Motherboard Format",
+        "Category": "Compatible Motherboards",
+        "Value": "Mini ITX"
+      }
+    ],
+    "Visuals": {
+      "MainPictureURL": "images/products/pc-components/Case-Fractal-Design+Ridge-Main.png",
+      "PictureSources": [
+
+      ]
+    }
   }
 ]

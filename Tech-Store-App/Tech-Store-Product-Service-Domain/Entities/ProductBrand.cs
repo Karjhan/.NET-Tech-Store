@@ -4,7 +4,7 @@ namespace Tech_Store_Product_Service_Domain.Entities;
 
 public sealed class ProductBrand : Entity
 {
-    public Name Name { get; set; }
+    public Name Name { get; private set; }
     
     private ProductBrand(Guid id, Name name) : base(id)
     {

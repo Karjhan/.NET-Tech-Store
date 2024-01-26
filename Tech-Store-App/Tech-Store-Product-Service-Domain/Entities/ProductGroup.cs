@@ -4,7 +4,7 @@ namespace Tech_Store_Product_Service_Domain.Entities;
 
 public class ProductGroup : Entity
 {
-    public Name Name { get; set; }
+    public Name Name { get; private set; }
 
     public readonly List<ProductType> ProductTypes;
     

@@ -4,7 +4,7 @@ namespace Tech_Store_Product_Service_Domain.Entities;
 
 public sealed class ProductType : Entity
 {
-    public Name Name { get; set; }
+    public Name Name { get; private set; }
 
     public readonly IEnumerable<ProductSpecificationCategory> SpecificationCategories;
     

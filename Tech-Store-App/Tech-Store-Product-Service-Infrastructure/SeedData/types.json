@@ -4,63 +4,110 @@
     "Name": {
       "ShortName": "Motherboard",
       "LongName": "Motherboard PCB"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Supported Memory",
+      "Slots",
+      "Back Panel Connectors"
+    ]
   },
   {
     "Id": "2afeb90a-87e5-43b0-a89b-a3a36611e2d7",
     "Name": {
       "ShortName": "CPU",
       "LongName": "Central Processing Unit"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Integrated Graphics",
+      "Supported Memory"
+    ]
   },
   {
     "Id": "939c67cc-1612-46ab-a9c5-4499a1ab3a49",
     "Name": {
       "ShortName": "GPU",
       "LongName": "Graphics Processing Unit"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Model",
+      "Chipset",
+      "Memory",
+      "3D API",
+      "Ports",
+      "Cooling",
+      "Others"
+    ]
   },
   {
     "Id": "feb1d092-ae92-4730-ab74-3f90488b387d",
     "Name": {
       "ShortName": "SSD",
       "LongName": "Solid State Drive"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Work Speeds",
+      "Characteristics"
+    ]
   },
   {
     "Id": "6cdee062-1386-4a8d-a63c-395f932580ea",
     "Name": {
       "ShortName": "HDD",
       "LongName": "Hard Disk Drive"
-    }
+    },
+    "SpecificationCategories": [
+      "General"
+    ]
   },
   {
     "Id": "e54ad1ca-6286-42a5-93e0-3ac27c961aa8",
     "Name": {
       "ShortName": "RAM",
       "LongName": "Random Access Memory"
-    }
+    },
+    "SpecificationCategories": [
+      "General"
+    ]
   },
   {
     "Id": "aae2232b-09cf-43bb-9394-4c1b5dfad959",
     "Name": {
       "ShortName": "PSU",
       "LongName": "Power Supply Unit"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Voltage",
+      "Connectors"
+    ]
   },
   {
     "Id": "3b8b156b-5e69-478a-bec6-1e35fa2f1297",
     "Name": {
       "ShortName": "Cooler",
       "LongName": "CPU Cooler"
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Socket Compatibility"
+    ]
   },
   {
     "Id": "af0aec11-54a6-41b2-9903-20fae660e7d1",
     "Name": {
       "ShortName": "Case",
       "LongName": ""
-    }
+    },
+    "SpecificationCategories": [
+      "General",
+      "Compatible Motherboards",
+      "Connectors",
+      "Supported Fans"
+    ]
   },
   {
     "Id": "740f5aac-c514-4cb8-9dc7-db0e7a5823f6",
@@ -74,20 +121,29 @@
     "Name": {
       "ShortName": "Sound Card",
       "LongName": ""
-    }
+    },
+    "SpecificationCategories": [
+      "General"
+    ]
   },
   {
     "Id": "b9f2bc99-95c4-46e9-9e89-8eafb6fb11d7",
     "Name": {
       "ShortName": "Optical Drive",
       "LongName": ""
-    }
+    },
+    "SpecificationCategories": [
+      "General"
+    ]
   },
   {
     "Id": "c5249808-877c-4a82-80b5-da2d88fcbf14",
     "Name": {
       "ShortName": "PC Modding",
       "LongName": "PC Modding Accessories"
-    }
+    },
+    "SpecificationCategories": [
+      "General"
+    ]
   }
 ]
