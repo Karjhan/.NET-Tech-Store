@@ -6,7 +6,12 @@ public sealed class Visuals : Entity
 {
     public string MainPictureURL { get; private set; }
 
-    private List<string> PictureSources { get; }
+    public List<VisualsPictureSource> PictureSources { get; }
+
+    public Visuals(Guid id) : base(id)
+    {
+        
+    }
     
     public Visuals(Guid productId, string mainPictureUrl) : base(productId)
     {
@@ -17,31 +22,6 @@ public sealed class Visuals : Entity
         
         MainPictureURL = mainPictureUrl;
         
-        PictureSources = new List<string> { MainPictureURL };
-    }
-
-    public IEnumerable<string> GetAllVisuals()
-    {
-        return PictureSources.AsReadOnly();
-    }
-
-    public void AddVisuals(string pictureUrl)
-    {
-        PictureSources.Add(pictureUrl);
-    }
-
-    public void AddVisuals(IEnumerable<string> pictureUrls)
-    {
-        PictureSources.AddRange(pictureUrls);
-    }
-
-    public void SetMainVisual(string pictureUrl)
-    {
-        MainPictureURL = pictureUrl;
-    }
-
-    public void RemoveVisual(string pictureUrl)
-    {
-        PictureSources.Remove(pictureUrl);
+        PictureSources = new List<VisualsPictureSource> { new VisualsPictureSource(this.Id, MainPictureURL) };
     }
 }

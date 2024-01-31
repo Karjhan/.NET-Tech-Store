@@ -1,12 +1,14 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.RegularExpressions;
 
 namespace Tech_Store_Product_Service_Domain.Primitives;
 
+[ComplexType]
 public sealed record Name()
 {
-    public string ShortName { get; }
-    
-    public string? LongName { get; }
+    public string ShortName { get; init; } = null!;
+
+    public string? LongName { get; init; }
 
     public Name(string shortName, string? longName = "") : this()
     {

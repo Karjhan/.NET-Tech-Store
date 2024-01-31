@@ -5,6 +5,11 @@ namespace Tech_Store_Product_Service_Domain.Entities;
 public sealed class ProductBrand : Entity
 {
     public Name Name { get; private set; }
+
+    public ProductBrand(Guid id) : base(id)
+    {
+        
+    }
     
     private ProductBrand(Guid id, Name name) : base(id)
     {

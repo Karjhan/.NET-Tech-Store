@@ -1,11 +1,12 @@
-﻿using Tech_Store_Product_Service_Domain.Primitives;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Tech_Store_Product_Service_Domain.Primitives;
 
 namespace Tech_Store_Product_Service_Domain.Entities;
 
 public sealed class Product : Entity
 {
     public Name Name { get; private set; }
-
+    
     public Description Description { get; private set; }
 
     public Price Price { get; private set; }
@@ -24,9 +25,27 @@ public sealed class Product : Entity
 
     public Guid ProductGroupId { get; private set; }
     
-    public IEnumerable<ProductSpecification> Specifications { get; private set; }
+    public List<ProductSpecification> Specifications { get; private set; }
 
-    private Product(Guid id, Name name, Description description, Price price, Visuals visuals, ProductType productType, Guid productTypeId, ProductBrand productBrand, Guid productBrandId, ProductGroup productGroup, Guid productGroupId, IEnumerable<ProductSpecification> specifications) : base(id)
+    public Product(Guid id) : base(id)
+    {
+        
+    }
+
+    private Product(
+        Guid id, 
+        Name name, 
+        Description description, 
+        Price price, 
+        Visuals visuals,
+        ProductType productType, 
+        Guid productTypeId, 
+        ProductBrand productBrand, 
+        Guid productBrandId, 
+        ProductGroup productGroup, 
+        Guid productGroupId, 
+        List<ProductSpecification> specifications
+    ) : base(id)
     {
         Name = name;
         Description = description;
@@ -41,9 +60,35 @@ public sealed class Product : Entity
         Specifications = specifications;
     }
 
-    public static Product Create (Guid id, Name name, Description description, Price price, Visuals visuals, ProductType productType, Guid productTypeId, ProductBrand productBrand, Guid productBrandId, ProductGroup productGroup, Guid productGroupId, IEnumerable<ProductSpecification> specifications)
+    public static Product Create (
+        Guid id, 
+        Name name, 
+        Description description, 
+        Price price, 
+        Visuals visuals, 
+        ProductType productType,
+        Guid productTypeId, 
+        ProductBrand productBrand, 
+        Guid productBrandId, 
+        ProductGroup productGroup, 
+        Guid productGroupId, 
+        List<ProductSpecification> specifications
+    )
     {
-        Product product = new Product(id, name, description, price, visuals, productType, productTypeId, productBrand, productBrandId, productGroup, productGroupId, specifications);
+        Product product = new Product(
+            id, 
+            name, 
+            description, 
+            price, 
+            visuals, 
+            productType,
+            productTypeId,
+            productBrand,
+            productBrandId, 
+            productGroup, 
+            productGroupId,
+            specifications
+        );
 
         return product;
     }

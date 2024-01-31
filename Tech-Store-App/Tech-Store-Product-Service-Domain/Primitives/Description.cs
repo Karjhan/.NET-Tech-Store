@@ -1,23 +1,23 @@
-﻿namespace Tech_Store_Product_Service_Domain.Primitives;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace Tech_Store_Product_Service_Domain.Primitives;
+
+[ComplexType]
 public sealed record Description()
 {
-    public string ShortDescription { get; set; }
+    public string ShortDescription { get; init; } = null!;
 
-    public string? LongDescription { get; set; }
+    public string? LongDescription { get; init; }
 
-    public Description(string? shortDescription, string? longDescription, int charLimitForShortDesc) : this()
+    public Description(string? shortDescription, string? longDescription) : this()
     {
         LongDescription = longDescription;
         
         if (string.IsNullOrEmpty(shortDescription))
         {
             // TODO: throw custom exception
-        }else if (shortDescription.Length < charLimitForShortDesc)
-        {
-            // TODO: throw custom exception
         }
 
-        ShortDescription = shortDescription;
+        ShortDescription = shortDescription!;
     }
 }

@@ -35,4 +35,19 @@
       <ProjectReference Include="..\Tech-Store-Product-Service-Domain\Tech-Store-Product-Service-Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="SeedData\brands.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="SeedData\groups.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="SeedData\products.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="SeedData\types.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

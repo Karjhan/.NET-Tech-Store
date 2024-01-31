@@ -6,7 +6,12 @@ public class ProductGroup : Entity
 {
     public Name Name { get; private set; }
 
-    public readonly List<ProductType> ProductTypes;
+    public readonly List<ProductType> ProductTypes = new List<ProductType>();
+
+    public ProductGroup(Guid id) : base(id)
+    {
+        
+    }
     
     private ProductGroup(Guid id, Name name, List<ProductType> productTypes) : base(id)
     {

@@ -21,6 +21,13 @@
     }
   },
   {
+    "Id": "ac4bc218-3ffc-40f6-a75e-b7ddddadcea7",
+    "Name": {
+      "ShortName": "Nvidia",
+      "LongName": "Nvidia Corporation"
+    }
+  },
+  {
     "Id": "22c47d79-e285-4b87-bb81-4e7300587b63",
     "Name": {
       "ShortName": "Gigabyte",

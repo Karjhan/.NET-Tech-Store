@@ -10,7 +10,7 @@
       "LongDescription": ""
     },
     "Price": {
-      "Amount": 0
+      "Amount": 150
     },
     "VisualsId": "f71997a8-3e7a-4802-ab30-f5f1bedb9d00",
     "ProductTypeId": "af0aec11-54a6-41b2-9903-20fae660e7d1",
@@ -79,7 +79,193 @@
       }
     ],
     "Visuals": {
-      "MainPictureURL": "images/products/pc-components/Case-Fractal-Design+Ridge-Main.png",
+      "MainPictureURL": "images/products/pc-components/Case-Fractal-Fractal+Design+Ridge-Main.png",
+      "PictureSources": [
+
+      ]
+    }
+  },
+  {
+    "Id": "04cd127b-efcf-4180-a023-4c91950d8f6b",
+    "Name": {
+      "ShortName": "GIGABYTE GEFORCE RTX 4070 TI AERO OC V2 12GB",
+      "LongName": ""
+    },
+    "Description": {
+      "ShortDescription": "Geforce RTX 4070TI is built with the ultra-efficient NVIDIA Ada Lovelace architecture. Experience super fast ray tracing, AI-accelerated performance with DLSS 3, new ways to discover any virtual world.",
+      "LongDescription": ""
+    },
+    "Price": {
+      "Amount": 950
+    },
+    "VisualsId": "e78f229b-a589-4ee5-b18c-3e2b2f578524",
+    "ProductTypeId": "939c67cc-1612-46ab-a9c5-4499a1ab3a49",
+    "ProductBrandId": "ac4bc218-3ffc-40f6-a75e-b7ddddadcea7",
+    "ProductGroupId": "d1101cf3-b4ee-425f-a358-80158d18991a",
+    "Specifications": [
+      {
+        "Name": "Interface",
+        "Category": "General",
+        "Value": "PCI Express x16 4.0"
+      },
+      {
+        "Name": "Max Resolution",
+        "Category": "General",
+        "Value": "7680x4320"
+      },
+      {
+        "Name": "Model",
+        "Category": "Model",
+        "Value": "GeForce RTX 4070 Ti"
+      },
+      {
+        "Name": "Edition",
+        "Category": "Model",
+        "Value": "AERO OC"
+      },
+      {
+        "Name": "Recommended for gaming",
+        "Category": "Model",
+        "Value": "Yes"
+      },
+      {
+        "Name": "Manufacturer",
+        "Category": "Chipset",
+        "Value": "Nvidia"
+      },
+      {
+        "Name": "Series",
+        "Category": "Chipset",
+        "Value": "GeForce RTX 4000"
+      },
+      {
+        "Name": "Technology",
+        "Category": "Chipset",
+        "Value": "4 nm"
+      },
+      {
+        "Name": "Graphics Processor",
+        "Category": "Chipset",
+        "Value": "Ada Lovelace"
+      },
+      {
+        "Name": "GPU clock",
+        "Category": "Chipset",
+        "Value": "2640 MHz"
+      },
+      {
+        "Name": "CUDA Cores",
+        "Category": "Chipset",
+        "Value": "7680"
+      },
+      {
+        "Name": "Memory Type",
+        "Category": "Memory",
+        "Value": "GDDR6X"
+      },
+      {
+        "Name": "Memory Quantity",
+        "Category": "Memory",
+        "Value": "12 GB"
+      },
+      {
+        "Name": "Memory BUS",
+        "Category": "Memory",
+        "Value": "192 bit"
+      },
+      {
+        "Name": "Bandwidth Speed(max)",
+        "Category": "Memory",
+        "Value": "21 GB/sec"
+      },
+      {
+        "Name": "DirectX Support",
+        "Category": "3D API",
+        "Value": "12 Ultimate"
+      },
+      {
+        "Name": "OpenGL Support",
+        "Category": "3D API",
+        "Value": "4.6"
+      },
+      {
+        "Name": "Vulkan Support",
+        "Category": "3D API",
+        "Value": "Yes"
+      },
+      {
+        "Name": "OpenCL Support",
+        "Category": "3D API",
+        "Value": "3.0"
+      },
+      {
+        "Name": "G-Sync Support",
+        "Category": "3D API",
+        "Value": "Yes"
+      },
+      {
+        "Name": "VR Ready",
+        "Category": "3D API",
+        "Value": "Yes"
+      },
+      {
+        "Name": "HDMI",
+        "Category": "Ports",
+        "Value": "1"
+      },
+      {
+        "Name": "Display Port",
+        "Category": "Ports",
+        "Value": "3"
+      },
+      {
+        "Name": "HDTV Support",
+        "Category": "Ports",
+        "Value": "Yes"
+      },
+      {
+        "Name": "Cooling System",
+        "Category": "Cooling",
+        "Value": "Active"
+      },
+      {
+        "Name": "Cooling Dimensions",
+        "Category": "Cooling",
+        "Value": "Tri Slot"
+      },
+      {
+        "Name": "Cooling Type",
+        "Category": "Cooling",
+        "Value": "Air"
+      },
+      {
+        "Name": "HDCP Ready",
+        "Category": "Others",
+        "Value": "Yes"
+      },
+      {
+        "Name": "Separate Power",
+        "Category": "Others",
+        "Value": "1x 16-pin PCI-E"
+      },
+      {
+        "Name": "Dimensions",
+        "Category": "Others",
+        "Value": "300 x 130 x 57.6 mm"
+      },
+      {
+        "Name": "RGB",
+        "Category": "Others",
+        "Value": "Yes"
+      },
+      {
+        "Name": "Backplate",
+        "Category": "Others",
+        "Value": "Yes"
+      }
+    ],
+    "Visuals": {
+      "MainPictureURL": "images/products/pc-components/GPU-Nvidia-GIGABYTE+GEFORCE+RTX+4070+TI+AERO+OC+V2+12GB-Main.png",
       "PictureSources": [
 
       ]

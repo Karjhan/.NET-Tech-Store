@@ -1,13 +1,8 @@
 ﻿namespace Tech_Store_Product_Service_Domain.Primitives;
 
-public abstract class Entity : IEquatable<Entity>
+public abstract class Entity(Guid id) : IEquatable<Entity>
 {
-    public Guid Id { get; private init; }
-    
-    protected Entity(Guid id)
-    {
-        Id = id;
-    }
+    public Guid Id { get; } = id;
 
     public static bool operator ==(Entity? first, Entity? second)
     {
@@ -53,4 +48,10 @@ public abstract class Entity : IEquatable<Entity>
 
         return entity.Id == Id;
     }
+    
+    public override int GetHashCode()
+    {
+        return Id.GetHashCode();
+    }
+
 }

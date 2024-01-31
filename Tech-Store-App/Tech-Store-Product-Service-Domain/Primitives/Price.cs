@@ -1,8 +1,11 @@
-﻿namespace Tech_Store_Product_Service_Domain.Primitives;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace Tech_Store_Product_Service_Domain.Primitives;
+
+[ComplexType]
 public sealed record Price()
 {
-    public decimal Amount { get; }
+    public decimal Amount { get; set; }
 
     public const string Currency = "DEFAULT";
 

@@ -8,12 +8,23 @@ public sealed class ProductSpecification : Entity
     
     public ProductSpecificationCategory Category { get; private set; }
 
-    public string Value { get; private set; }
+    public Guid ProductTypeId { get; private set; }
     
-    public ProductSpecification(Guid productId, string name, ProductSpecificationCategory category, string value) : base(productId)
+    public string CategoryName { get; private set; }
+
+    public string Value { get; private set; }
+
+    public ProductSpecification(Guid id) : base(id)
+    {
+        
+    }
+    
+    public ProductSpecification(Guid productId, string name, ProductSpecificationCategory category, Guid productTypeId, string categoryName, string value) : base(productId)
     {
         Name = name;
         Category = category;
+        ProductTypeId = productTypeId;
+        CategoryName = categoryName;
         Value = value;
     }
 }

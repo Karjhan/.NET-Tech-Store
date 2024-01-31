@@ -2,10 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Tech_Store_Product_Service_Domain.Abstractions;
 using Tech_Store_Product_Service_Domain.Entities;
+using Tech_Store_Product_Service_Domain.Primitives;
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
 namespace Tech_Store_Product_Service_Infrastructure.DataContexts;
 
-public class ProductsContext : DbContext, IUnitOfWork
+public class ApplicationContext : DbContext, IUnitOfWork
 {
     public DbSet<Product> Products { get; set; }
 
@@ -17,11 +20,13 @@ public class ProductsContext : DbContext, IUnitOfWork
 
     public DbSet<Visuals> Visuals { get; set; }
 
-    public DbSet<ProductSpecificationCategory> ProductCategories { get; set; }
+    public DbSet<ProductSpecificationCategory> ProductSpecificationCategoriesCategories { get; set; }
 
     public DbSet<ProductSpecification> ProductSpecifications { get; set; }
+
+    public DbSet<VisualsPictureSource> PictureSources { get; set; }
     
-    public ProductsContext(DbContextOptions<ProductsContext> options) : base(options)
+    public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
     {
         
     }

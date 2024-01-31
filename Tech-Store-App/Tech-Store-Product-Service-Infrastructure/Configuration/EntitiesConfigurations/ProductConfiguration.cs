@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Tech_Store_Product_Service_Domain.Entities;
 
-namespace Tech_Store_Product_Service_Infrastructure.Configuration;
+namespace Tech_Store_Product_Service_Infrastructure.Configuration.EntitiesConfigurations;
 
 public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {
@@ -18,10 +18,6 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
         
         builder.HasOne(product => product.ProductGroup).WithMany().HasForeignKey(product => product.ProductGroupId);
 
-        builder.HasMany(product => product.Specifications).WithOne().OnDelete(DeleteBehavior.Cascade);
-
-        builder.Property(product => product.Name.ShortName).IsRequired();
-        
-        builder.Property(product => product.Visuals.MainPictureURL).IsRequired();
+        builder.HasMany(product => product.Specifications).WithOne().OnDelete(DeleteBehavior.Cascade).HasForeignKey(productSpecification => productSpecification.Id).IsRequired();
     }
 }
