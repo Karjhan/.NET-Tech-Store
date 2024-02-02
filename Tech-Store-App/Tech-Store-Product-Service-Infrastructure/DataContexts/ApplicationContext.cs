@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Tech_Store_Product_Service_Domain.Abstractions;
 using Tech_Store_Product_Service_Domain.Entities;
-using Tech_Store_Product_Service_Domain.Primitives;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 

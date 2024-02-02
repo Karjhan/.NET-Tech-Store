@@ -2,7 +2,7 @@
 
 namespace Tech_Store_Product_Service_Domain.Entities;
 
-public class ProductGroup : Entity
+public sealed class ProductGroup : Entity
 {
     public Name Name { get; private set; }
 
