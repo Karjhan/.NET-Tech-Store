@@ -20,7 +20,6 @@
     <ItemGroup>
       <Folder Include="ProductBrands\" />
       <Folder Include="ProductGroups\" />
-      <Folder Include="Products\" />
       <Folder Include="ProductTypes\" />
       <Folder Include="Visuals\" />
     </ItemGroup>
